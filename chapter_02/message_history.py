@@ -3,28 +3,24 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import json
 
-# Load API key from .env file
 load_dotenv()
 api_key = os.getenv('OPENAI_API_KEY')
-# Ensure the API key is available
+
 if not api_key:
-    raise ValueError("No API key found. Please check your .env file.")
+    raise ValueError("API 키 없음 - .env 파일을 확인하세요.")
 client = OpenAI(api_key=api_key)
 
-
-# Example function to query ChatGPT
 def ask_chatgpt(messages):
     response = client.chat.completions.create(
-        model="gpt-4-1106-preview",
+        model="gpt-5.4-nano",
         messages=messages,
-        temperature=0.7,        
+        temperature=1,        
         )     
     
     response_model = response.model_dump()
     print(json.dumps(response_model, indent=4))  
     
     return response.choices[0].message.content
-
 
 messages = [
     {
