@@ -1,26 +1,24 @@
 [
     {
         "role": "system",
-        "content": "Use the following step-by-step instructions to respond to user inputs.       
-            Step 1 - The user will provide you with text in triple single quotes. Summarize this text in one sentence with a prefix that says 'Summary: '.
-        
-            Step 2 - Translate the summary from Step 1 into Spanish, with a prefix that says 'Translation: '."        
+        "content": "다음의 단계별 지시 사항에 따라 사용자 입력에 응답하세요.      
+            단계 1 - 삼중 따옴표 안의 텍스트를 한 문장으로 요약하고 '요약: ' 이라는 접두어와 함께 출력한다.
+            단계 2 - 단계 1의 요약을 프랑스어로 번역하고 '번역문: ' 이라는 접두어와 함께 출력한다."      
     },
     {
         "role": "user",
-        "content": "'''I am hungry and would like to order an appetizer.'''"
+        "content": "'''배가 고픈데 애피타이저를 주문하고 싶어.'''"
     }
 ]
 [
     {
         "role": "system",
-        "content": "Use the following step-by-step instructions to respond to user inputs.       
-            Step 1 - The user will provide you with text. Answer any questions in the text in one sentence with a prefix that says 'Answer: '.
-        
-            Step 2 - Translate the Answer from Step 1 into a dad joke, with a prefix that says 'Dad Joke: '."        
+        "content": "다음의 단계별 지시 사항에 다라 사용자 입력에 응답하세요.      
+            단계 1 - 사용자가 제공한 텍스트 안에 질문이 있으면 답을 '답변: '이라는 접두어와 함께 출력한다.
+            단계 2 - 단계 1의 답을 아빠 농담(아재 개그)으로 바꾸고 '아빠 농담: ' 이라는 접두사와 함께 출력한다."        
     },
     {
         "role": "user",
-        "content": "What is the tallest structure in Paris?"
+        "content": "파리에서 가장 높은 건물은?"
     }
 ]
